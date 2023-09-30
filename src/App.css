@@ -154,15 +154,48 @@
 
 .childwidth {
     width: 85%;
-    margin-left: 17%;
+    margin-left: 16%;
 }
 
 
 
 
+/******************
+**  Buttons ******
+*******************/
+.button-cont{
+    display: flex;
+    border: 2px solid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    margin: 7px 20px;
+    padding: 4px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 2px white;
+}
 
-
-
+/******************
+**  Products ******
+*******************/
+.product-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 20px 0 10px 0;
+}
+.product-box{
+    border: 2px solid;
+    height: 200px;
+    width: 380px;
+    padding: 10px;
+}
 
 
 
