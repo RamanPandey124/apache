@@ -18,4 +18,20 @@ const getProducts = createAsyncThunk(
     }
 )
 
-export { getProducts }
+const getCustomers = createAsyncThunk(
+    'auth/customer',
+    async (obj, { rejectWithValue }) => {
+        try {
+            const { data } = await API.post('/Customers', obj)
+            return data
+        } catch (error) {
+            if (error.response && error.response.data.message) {
+                return rejectWithValue(error.response.data.message)
+            }
+            else {
+                return rejectWithValue(error.message)
+            }
+        }
+    }
+)
+export { getProducts,getCustomers }

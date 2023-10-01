@@ -150,14 +150,31 @@
 *******************/
 .children {
     width: 100%;
+    text-align: center;
 }
 
 .childwidth {
     width: 85%;
     margin-left: 16%;
 }
-
-
+.heading{
+    font-size: xx-large;
+    font-weight: 800;
+}
+.table-cont{
+    overflow: auto;
+}
+.table-cont::-webkit-scrollbar{
+    display: none;
+}
+.table{
+    padding: 10px;
+    height: 80vh;
+    width: 100%;
+}
+.th{
+    padding: 10px 5px;
+}
 
 
 /******************
