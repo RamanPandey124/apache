@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { getCustomers, getProducts } from '../actions/AuthActions'
+import { getCustomers, getGeography, getOverview, getProducts } from '../actions/AuthActions'
 
 
 const initialState = {
@@ -8,7 +8,7 @@ const initialState = {
     products: null,
     customer:null,
     transactions: null,
-    overviews: null,
+    overview: null,
     geography: null
 
 }
@@ -40,6 +40,36 @@ const AuthSlice = createSlice({
             state.customer = payload
         })
         builder.addCase(getCustomers.rejected, (state, { payload }) => {
+            state.loading = false
+            state.message = payload
+        })
+
+
+        // geography
+        builder.addCase(getGeography.pending, (state) => {
+            state.loading = true
+        })
+        builder.addCase(getGeography.fulfilled, (state, {payload}) => {
+            state.loading = false
+            state.geography = payload
+        })
+        builder.addCase(getGeography.rejected, (state, { payload }) => {
+            console.log('working',payload)
+            state.loading = false
+            state.message = payload
+        })
+
+
+        // overview
+        builder.addCase(getOverview.pending, (state) => {
+            state.loading = true
+        })
+        builder.addCase(getOverview.fulfilled, (state, {payload}) => {
+            state.loading = false
+            state.overview = payload
+        })
+        builder.addCase(getOverview.rejected, (state, { payload }) => {
+            console.log('working',payload)
             state.loading = false
             state.message = payload
         })

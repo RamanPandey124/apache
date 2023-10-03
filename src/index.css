@@ -1,7 +1,7 @@
 /* Theme one */
 
 .bgNavy {
-    background-color: navy;
+    background-color: rgb(2, 2, 65);
 }
 
 .bgNavy2 {
@@ -225,7 +225,7 @@
 /* Theme Six */
 
 .bgRed {
-    background-color: rgb(239, 12, 50);
+    background-color: rgb(93, 5, 20);
 }
 
 .bgRed2 {
@@ -264,3 +264,4 @@
     color: orange;
     background-color: black;
 }
+

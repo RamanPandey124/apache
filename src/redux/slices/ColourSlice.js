@@ -10,7 +10,7 @@ const initialState = {
     colour7: 'navy7',
     colour8: 'navy8',
     colour9: 'navy9',
-    colour10: 'hover1',
+    colour10: 'hover1'
 }
 
 const ColourSlice = createSlice({

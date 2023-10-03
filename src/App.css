@@ -193,6 +193,14 @@
     border-radius: 8px;
     box-shadow: 0 0 2px 2px white;
 }
+.inputs{
+    /* border: 2px solid; */
+    display: flex;
+}
+.charts{
+    display: flex;
+    place-content: center;
+}
 
 /******************
 **  Products ******

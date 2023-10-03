@@ -34,4 +34,28 @@ const getCustomers = createAsyncThunk(
         }
     }
 )
-export { getProducts,getCustomers }
+
+const getGeography = createAsyncThunk(
+    'auth/geography',
+    async () => {
+        try {
+            const { data } = await API.get('/Geography')
+            return data
+        } catch (error) {
+            console.log(error)
+        }
+    }
+)
+
+const getOverview = createAsyncThunk(
+    'auth/overview',
+    async () => {
+        try {
+            const { data } = await API.get('/Overview')
+            return data
+        } catch (error) {
+            console.log(error)
+        }
+    }
+)
+export { getProducts, getCustomers, getGeography, getOverview }
