@@ -10,7 +10,8 @@ const initialState = {
     colour7: 'navy7',
     colour8: 'navy8',
     colour9: 'navy9',
-    colour10: 'hover1'
+    colour10: 'hover1',
+    colour11: 'active1'
 }
 
 const ColourSlice = createSlice({
@@ -28,6 +29,7 @@ const ColourSlice = createSlice({
             state.colour8 = 'navy8'
             state.colour9 = 'navy9'
             state.colour10 = 'hover1'
+            state.colour11 = 'active1'
         },
         black: (state) => {
             state.colour1 = 'bgBlack'
@@ -40,6 +42,7 @@ const ColourSlice = createSlice({
             state.colour8 = 'black8'
             state.colour9 = 'black9'
             state.colour10 = 'hover2'
+            state.colour11 = 'active2'
         },
         green: (state) => {
             state.colour1 = 'bgGreen'
@@ -52,6 +55,7 @@ const ColourSlice = createSlice({
             state.colour8 = 'green8'
             state.colour9 = 'green9'
             state.colour10 = 'hover3'
+            state.colour11 = 'active3'
         },
         pink: (state) => {
             state.colour1 = 'bgPink'
@@ -64,6 +68,7 @@ const ColourSlice = createSlice({
             state.colour8 = 'pink8'
             state.colour9 = 'pink9'
             state.colour10 = 'hover4'
+            state.colour11 = 'active4'
         },
         yellow: (state) => {
             state.colour1 = 'bgYellow'
@@ -76,6 +81,7 @@ const ColourSlice = createSlice({
             state.colour8 = 'yellow8'
             state.colour9 = 'yellow9'
             state.colour10 = 'hover5'
+            state.colour11 = 'active5'
         },
         red: (state) => {
             state.colour1 = 'bgRed'
@@ -88,6 +94,7 @@ const ColourSlice = createSlice({
             state.colour8 = 'red8'
             state.colour9 = 'red9'
             state.colour10 = 'hover6'
+            state.colour11 = 'active6'
         },
 
     },

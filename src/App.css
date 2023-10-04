@@ -22,7 +22,7 @@
     position: fixed;
     bottom: 50px;
     right: 10px;
-    z-index:30;
+    z-index: 30;
 }
 
 .themebox {
@@ -41,6 +41,40 @@
     height: 48px;
     width: 55px;
 }
+
+
+/******************
+**  spinner   ******
+*******************/
+
+.Spinner-cont {
+    height: 99%;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Spinner-box {
+    border: 5px solid gray;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border-bottom: 5px dashed yellow;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 
 /******************
 **  header   ******
@@ -157,22 +191,34 @@
     width: 85%;
     margin-left: 16%;
 }
-.heading{
+
+.heading {
     font-size: xx-large;
     font-weight: 800;
 }
-.table-cont{
+
+.table-cont {
     overflow: auto;
+    height: 77vh;
+    margin: 10px;
 }
-.table-cont::-webkit-scrollbar{
+
+.table-cont::-webkit-scrollbar {
     display: none;
 }
-.table{
-    padding: 10px;
+
+.trth {
+    position: sticky;
+    top: 0px;
+}
+
+.table {
+    /* padding: 0px 10px; */
     height: 80vh;
     width: 100%;
 }
-.th{
+
+.th {
     padding: 10px 5px;
 }
 
@@ -180,32 +226,46 @@
 /******************
 **  Buttons ******
 *******************/
-.button-cont{
+.button-cont {
     display: flex;
-    border: 2px solid;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
-.btn{
+
+.btn {
     margin: 7px 20px;
     padding: 4px 20px;
     border-radius: 8px;
     box-shadow: 0 0 2px 2px white;
 }
-.inputs{
-    /* border: 2px solid; */
+
+.inputs {
     display: flex;
 }
-.charts{
+
+.dates-box {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.datebtn {
+    margin: 5px;
+    display: block;
+}
+
+.charts {
     display: flex;
     place-content: center;
 }
 
+
 /******************
 **  Products ******
 *******************/
-.product-cont{
+.product-cont {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -215,14 +275,86 @@
     column-gap: 10px;
     padding: 20px 0 10px 0;
 }
-.product-box{
+
+.product-box {
     border: 2px solid;
     height: 200px;
     width: 380px;
     padding: 10px;
 }
+.product-box h2,p,h4{
+    margin-bottom: 11px;
+}
 
+/******************
+**  dashboard ******
+*******************/
+.dashboard-cont {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+}
 
+.numberbox {
+    height: 39vh;
+    width: 39%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.areabox {
+    height: 39vh;
+    width: 59%;
+}
+
+.transactionbox {
+    height: 49vh;
+    width: 69%;
+    padding: 0;
+    margin: 0;
+}
+
+.piebox {
+    height: 49vh;
+    width: 29%;
+}
+
+.numbox1 {
+    height: 18vh;
+    width: 48%;
+}
+
+.numbox2 {
+    height: 18vh;
+    width: 48%;
+}
+
+.numbox3 {
+    height: 18vh;
+    width: 48%;
+}
+
+.numbox4 {
+    height: 18vh;
+    width: 48%;
+}
+
+.numberbox p{
+    font-size: 22px;
+    margin-top: 5%;
+}
+
+.overflow{
+    overflow: auto;
+}
+.overflow::-webkit-scrollbar{
+    display: none;
+}
 
 
 @media (max-width:1100px) {
@@ -242,6 +374,7 @@
 
     .slider {
         display: block;
+        width: 30%;
     }
 
     .sliderDisplay {
@@ -251,5 +384,50 @@
     .childwidth {
         width: 100%;
         margin-left: 0;
+    }
+}
+
+@media (max-width:800px) {
+    .dashboard-cont {
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .slider{
+        width: 40%;
+    }
+    .numberbox {
+        width: 90%;
+    }
+
+    .areabox {
+        width: 90%;
+    }
+
+    .transactionbox {
+        width: 90%;
+        height: 70vh;
+    }
+
+    .piebox {
+        width: 90%;
+    }
+}
+@media (max-width:510px) {
+    .slider{width: 50%;}
+}
+@media (max-width:430px) {
+    .slider{width: 65%;}
+}
+@media (max-width:360px) {
+    .slider{width: 80%;}
+}
+@media (max-width:310px) {
+    .slider{width: 100%;}
+}
+@media (max-width:295px) {
+    .dates-box {
+        width: 45%;
     }
 }

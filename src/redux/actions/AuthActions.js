@@ -58,4 +58,28 @@ const getOverview = createAsyncThunk(
         }
     }
 )
-export { getProducts, getCustomers, getGeography, getOverview }
+
+const getTransaction = createAsyncThunk(
+    'auth/transaction',
+    async (obj) => {
+        try {
+            const { data } = await API.post('/Transactions', obj)
+            return data
+        } catch (error) {
+            console.log(error)
+        }
+    }
+)
+
+const getAdmin = createAsyncThunk(
+    'auth/admin',
+    async (obj) => {
+        try {
+            const { data } = await API.post('/Admin', obj)
+            return data
+        } catch (error) {
+            console.log(error)
+        }
+    }
+)
+export { getProducts, getCustomers, getGeography, getOverview,getTransaction,getAdmin }

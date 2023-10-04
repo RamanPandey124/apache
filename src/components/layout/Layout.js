@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     const { navState } = useSelector((state) => state.navdis)
     const { colour1, colour2, colour3, colour4, colour5,
         colour6, colour7, colour8, colour9, colour10 } = useSelector((state) => state.Colour)
-    const loading = false
+    const {loading} = useSelector((state)=>state.auth)
     return <>
         <div className={`Layout-cont ${colour1} ${colour6}`}>
             <div className={`header`}><Header /></div>

@@ -7,13 +7,16 @@ import { navy, black, green, pink, yellow, red } from '../../redux/slices/Colour
 
 const Themebox = () => {
     const [state, setState] = useState(true)
+    const { colour1, colour2, colour3, colour4, colour5,
+        colour6, colour7, colour8, colour9, colour10 } = useSelector((state) => state.Colour)
+    
     const dispatch = useDispatch()
     return <>
         <div className='theme-cont'>{
             state ? <div>
                 <AiFillSetting className='colorIcon' onClick={() => setState(false)} />
             </div> :
-                <div className={`themebox `}>
+                <div className={`themebox ${colour1}`}>
                     <div className={`colorBox`}>
                         <IoIosColorPalette
                             onClick={() => {

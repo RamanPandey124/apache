@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { getCustomers, getGeography, getOverview, getProducts } from '../actions/AuthActions'
+import { getAdmin, getCustomers, getGeography, getOverview, getProducts, getTransaction } from '../actions/AuthActions'
 
 
 const initialState = {
@@ -9,8 +9,8 @@ const initialState = {
     customer:null,
     transactions: null,
     overview: null,
-    geography: null
-
+    geography: null,
+    admin:null
 }
 
 const AuthSlice = createSlice({
@@ -69,6 +69,36 @@ const AuthSlice = createSlice({
             state.overview = payload
         })
         builder.addCase(getOverview.rejected, (state, { payload }) => {
+            console.log('working',payload)
+            state.loading = false
+            state.message = payload
+        })
+
+
+        // transaction
+        builder.addCase(getTransaction.pending, (state) => {
+            state.loading = true
+        })
+        builder.addCase(getTransaction.fulfilled, (state, {payload}) => {
+            state.loading = false
+            state.transactions = payload
+        })
+        builder.addCase(getTransaction.rejected, (state, { payload }) => {
+            console.log('working',payload)
+            state.loading = false
+            state.message = payload
+        })
+
+
+        // Admin
+        builder.addCase(getAdmin.pending, (state) => {
+            state.loading = true
+        })
+        builder.addCase(getAdmin.fulfilled, (state, {payload}) => {
+            state.loading = false
+            state.admin = payload
+        })
+        builder.addCase(getAdmin.rejected, (state, { payload }) => {
             console.log('working',payload)
             state.loading = false
             state.message = payload

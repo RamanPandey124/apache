@@ -34,7 +34,7 @@ const Customers = () => {
         <div className={`table-cont`}>
             <table className={` table`}>
                 <thead>
-                    <tr className={` ${colour3}`}>
+                    <tr className={` ${colour3} trth`}>
                         <th className={`${colour7} th`}>SNo.</th>
                         <th className={`${colour7} th`}>Name</th>
                         <th className={`${colour7} th`}>Email</th>
@@ -46,12 +46,12 @@ const Customers = () => {
                 {customer?.map((value, index) => {
                     return <tbody key={value._id}>
                         <tr className={`${colour4}`}>
-                            <td>{index + 1 + (page - 1) * 25}</td>
-                            <td>{value.name}</td>
-                            <td>{value.email}</td>
-                            <td>{value.phoneNumber}</td>
-                            <td>{value.country}</td>
-                            <td>{value.occupation}</td>
+                            <td className="th">{index + 1 + (page - 1) * 25}</td>
+                            <td className="th">{value.name}</td>
+                            <td className="th">{value.email}</td>
+                            <td className="th">{value.phoneNumber}</td>
+                            <td className="th">{value.country}</td>
+                            <td className="th">{value.occupation}</td>
                         </tr>
                     </tbody>
                 })}

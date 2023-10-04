@@ -41,6 +41,10 @@
     background-color: navy;
 }
 
+.active1 {
+    color: rgb(39, 215, 39);
+    background-color: navy;
+}
 
 /* Theme two */
 
@@ -49,15 +53,15 @@
 }
 
 .bgBlack2 {
-    background-color: rgb(55, 30, 30);
+    background-color: rgb(45, 40, 40);
 }
 
 .bgBlack3 {
-    background-color: rgb(167, 120, 120);
+    background-color: rgb(87, 30, 22);
 }
 
 .bgBlack4 {
-    background-color: gray;
+    background-color: rgb(38, 33, 33);
 }
 
 .bgBlack5 {
@@ -69,7 +73,7 @@
 }
 
 .black7 {
-    color: orange;
+    color: rgb(28, 64, 206);
 }
 
 .black8 {
@@ -77,10 +81,14 @@
 }
 
 .black9 {
-    color: rgb(22, 240, 232);
+    color: rgb(215, 240, 22);
 }
 
 .hover2:hover {
+    color: orange;
+    background-color: black;
+}
+.active2 {
     color: orange;
     background-color: black;
 }
@@ -102,11 +110,11 @@
 }
 
 .bgGreen4 {
-    background-color: rgb(16, 150, 56)
+    background-color: rgb(37, 98, 76)
 }
 
-.bgGreen6 {
-    background-color: rgb(157, 232, 27)
+.bgGreen5 {
+    background-color: rgb(27, 136, 232)
 }
 
 .green6 {
@@ -118,16 +126,20 @@
 }
 
 .green8 {
-    color: orangered;
+    color: rgb(0, 17, 255);
 }
 
 .green9 {
-    color: rgb(22, 240, 232);
+    color: rgb(255, 5, 5);
 }
 
 .hover3:hover {
-    color: orange;
-    background-color: black;
+    color: rgb(43, 255, 0);
+    background-color: rgb(64, 6, 98);
+}
+.active3 {
+    color: rgb(43, 255, 0);
+    background-color: rgb(52, 8, 101);
 }
 
 
@@ -139,7 +151,7 @@
 }
 
 .bgPink2 {
-    background-color: rgb(226, 11, 246);
+    background-color: rgb(107, 25, 140);
 }
 
 .bgPink3 {
@@ -159,20 +171,24 @@
 }
 
 .pink7 {
-    color: orange;
+    color: rgb(19, 18, 18);
 }
 
 .pink8 {
-    color: orangered;
+    color: rgb(55, 255, 0);
 }
 
 .pink9 {
-    color: rgb(22, 240, 232);
+    color: rgb(242, 147, 249);
 }
 
 .hover4:hover {
-    color: orange;
-    background-color: black;
+    color: rgb(0, 255, 179);
+    background-color: rgb(233, 123, 14);
+}
+.active4 {
+    color: rgb(0, 255, 179);
+    background-color: rgb(233, 123, 14);
 }
 
 
@@ -196,7 +212,7 @@
 }
 
 .bgYellow5 {
-    background-color: rgb(120, 158, 23);
+    background-color: rgb(158, 84, 23);
 }
 
 .yellow6 {
@@ -208,14 +224,18 @@
 }
 
 .yellow8 {
-    color: orangered;
+    color: rgb(255, 0, 230);
 }
 
 .yellow9 {
-    color: rgb(22, 240, 232);
+    color: rgb(22, 240, 40);
 }
 
 .hover5:hover {
+    color: orange;
+    background-color: black;
+}
+.active5 {
     color: orange;
     background-color: black;
 }
@@ -249,7 +269,7 @@
 }
 
 .red7 {
-    color: orange;
+    color: rgb(47, 0, 255);
 }
 
 .red8 {
@@ -264,4 +284,7 @@
     color: orange;
     background-color: black;
 }
-
+.active6 {
+    color: rgb(0, 68, 255);
+    background-color: rgb(86, 21, 16);
+}

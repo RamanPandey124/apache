@@ -47,6 +47,7 @@ const Overview = () => {
         xAxis: {
             data: monthData.months
         },
+        textStyle:{color:'white'},
         yAxis: {},
 
         series: [
